@@ -28,7 +28,7 @@ func (api *Api) StartBattleHandler(w http.ResponseWriter, r *http.Request) {
 	battleID := uuid.New().String()
 
 	httpReq := &battle.StartBattleRequest{}
-	startBattleReq, err := decodeHttpRequest[*battle.StartBattleRequest](r, httpReq)
+	startBattleReq, err := decodeHttpRequest(r, httpReq)
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusBadRequest)
 		return
@@ -54,7 +54,7 @@ func (api *Api) StartBattleHandler(w http.ResponseWriter, r *http.Request) {
 
 func (api *Api) FinishBattleHandler(w http.ResponseWriter, r *http.Request) {
 	httpReq := &battle.FinishBattleRequest{}
-	finishBattleReq, err := decodeHttpRequest[*battle.FinishBattleRequest](r, httpReq)
+	finishBattleReq, err := decodeHttpRequest(r, httpReq)
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusBadRequest)
 		return
@@ -80,7 +80,7 @@ func (api *Api) FinishBattleHandler(w http.ResponseWriter, r *http.Request) {
 
 func (api *Api) GetRankHandler(w http.ResponseWriter, r *http.Request) {
 	httpReq := &leaderboard.GetRankRequest{}
-	getRankReq, err := decodeHttpRequest[*leaderboard.GetRankRequest](r, httpReq)
+	getRankReq, err := decodeHttpRequest(r, httpReq)
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusBadRequest)
 		return
@@ -105,7 +105,7 @@ func (api *Api) GetRankHandler(w http.ResponseWriter, r *http.Request) {
 
 func (api *Api) GetTopPlayersHandler(w http.ResponseWriter, r *http.Request) {
 	httpReq := &leaderboard.GetTopPlayersRequest{}
-	getTopPlayersReq, err := decodeHttpRequest[*leaderboard.GetTopPlayersRequest](r, httpReq)
+	getTopPlayersReq, err := decodeHttpRequest(r, httpReq)
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusBadRequest)
 		return
@@ -138,7 +138,7 @@ func (api *Api) GetTopPlayersHandler(w http.ResponseWriter, r *http.Request) {
 
 func (api *Api) CreatePlayerHandler(w http.ResponseWriter, r *http.Request) {
 	httpReq := &player.CreatePlayerRequest{}
-	createPlayerReq, err := decodeHttpRequest[*player.CreatePlayerRequest](r, httpReq)
+	createPlayerReq, err := decodeHttpRequest(r, httpReq)
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusBadRequest)
 		return
@@ -162,7 +162,7 @@ func (api *Api) CreatePlayerHandler(w http.ResponseWriter, r *http.Request) {
 
 func (api *Api) GetPlayerByIDHandler(w http.ResponseWriter, r *http.Request) {
 	httpReq := &player.GetPlayerByIdRequest{}
-	getPlayerByIDReq, err := decodeHttpRequest[*player.GetPlayerByIdRequest](r, httpReq)
+	getPlayerByIDReq, err := decodeHttpRequest(r, httpReq)
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusBadRequest)
 		return
