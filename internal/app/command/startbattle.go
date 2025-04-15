@@ -3,8 +3,8 @@ package command
 import (
 	"time"
 
-	"github.com/toledoom/gork/internal/domain/battle"
-	"github.com/toledoom/gork/internal/domain/player"
+	"github.com/toledoom/gork_example/internal/domain/battle"
+	"github.com/toledoom/gork_example/internal/domain/player"
 )
 
 type StartBattle struct {

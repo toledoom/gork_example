@@ -8,9 +8,9 @@ import (
 
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/render"
-	"github.com/toledoom/gork/internal/app"
-	httpport "github.com/toledoom/gork/internal/ports/http"
 	"github.com/toledoom/gork/pkg/gork"
+	"github.com/toledoom/gork_example/internal/app"
+	httpport "github.com/toledoom/gork_example/internal/ports/http"
 )
 
 func main() {

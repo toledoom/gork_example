@@ -1,7 +1,7 @@
 package query
 
 import (
-	"github.com/toledoom/gork/internal/domain/battle"
+	"github.com/toledoom/gork_example/internal/domain/battle"
 )
 
 type GetBattleResult struct {

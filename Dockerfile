@@ -6,6 +6,6 @@ WORKDIR /server
 
 COPY . .
 
-RUN go build -o /gameserver cmd/server/main.go
+RUN go build -o /gameserver cmd/httpserver/main.go
 
 EXPOSE 50051

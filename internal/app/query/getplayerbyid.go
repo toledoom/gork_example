@@ -1,7 +1,7 @@
 package query
 
 import (
-	"github.com/toledoom/gork/internal/domain/player"
+	"github.com/toledoom/gork_example/internal/domain/player"
 )
 
 type GetPlayerByID struct {

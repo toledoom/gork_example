@@ -4,7 +4,7 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/toledoom/gork/internal/domain/battle"
+	"github.com/toledoom/gork_example/internal/domain/battle"
 )
 
 func TestELOScoreCalculator(t *testing.T) {

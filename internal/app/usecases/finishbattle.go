@@ -1,9 +1,9 @@
 package usecases
 
 import (
-	"github.com/toledoom/gork/internal/app/command"
-	"github.com/toledoom/gork/internal/app/query"
 	"github.com/toledoom/gork/pkg/gork"
+	"github.com/toledoom/gork_example/internal/app/command"
+	"github.com/toledoom/gork_example/internal/app/query"
 )
 
 type FinishBattleInput struct {

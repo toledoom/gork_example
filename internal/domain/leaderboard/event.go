@@ -3,8 +3,8 @@ package leaderboard
 import (
 	"errors"
 
-	"github.com/toledoom/gork/internal/domain/player"
 	"github.com/toledoom/gork/pkg/gork"
+	"github.com/toledoom/gork_example/internal/domain/player"
 )
 
 type PlayerScoreUpdatedEventHandler struct {

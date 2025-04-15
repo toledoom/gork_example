@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/toledoom/gork/internal/domain/battle"
-	battlestorage "github.com/toledoom/gork/internal/storage/battle"
+	"github.com/toledoom/gork_example/internal/domain/battle"
+	battlestorage "github.com/toledoom/gork_example/internal/storage/battle"
 )
 
 type Handepora struct{}
