@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option go_package = "github.com/toledoom/gork/proto/battle";
+option go_package = "github.com/toledoom/gork_example/proto/battle";
 
 package battle;
 

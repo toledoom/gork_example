@@ -5,7 +5,7 @@ import (
 	"fmt"
 
 	"github.com/go-redis/redis/v8"
-	domain "github.com/toledoom/gork/internal/domain/leaderboard"
+	domain "github.com/toledoom/gork_example/internal/domain/leaderboard"
 )
 
 type RedisRanking struct {

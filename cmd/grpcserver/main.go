@@ -5,12 +5,12 @@ import (
 	"log"
 	"net"
 
-	"github.com/toledoom/gork/internal/app"
-	grpcport "github.com/toledoom/gork/internal/ports/grpc"
-	"github.com/toledoom/gork/internal/ports/grpc/proto/battle"
-	"github.com/toledoom/gork/internal/ports/grpc/proto/leaderboard"
-	"github.com/toledoom/gork/internal/ports/grpc/proto/player"
 	"github.com/toledoom/gork/pkg/gork"
+	"github.com/toledoom/gork_example/internal/app"
+	grpcport "github.com/toledoom/gork_example/internal/ports/grpc"
+	"github.com/toledoom/gork_example/internal/ports/grpc/proto/battle"
+	"github.com/toledoom/gork_example/internal/ports/grpc/proto/leaderboard"
+	"github.com/toledoom/gork_example/internal/ports/grpc/proto/player"
 	"google.golang.org/grpc"
 )
 

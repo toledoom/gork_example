@@ -1,10 +1,10 @@
 package usecases
 
 import (
-	"github.com/toledoom/gork/internal/app/command"
-	"github.com/toledoom/gork/internal/app/query"
-	"github.com/toledoom/gork/internal/domain/player"
 	"github.com/toledoom/gork/pkg/gork"
+	"github.com/toledoom/gork_example/internal/app/command"
+	"github.com/toledoom/gork_example/internal/app/query"
+	"github.com/toledoom/gork_example/internal/domain/player"
 )
 
 type CreatePlayerInput struct {

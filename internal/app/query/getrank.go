@@ -1,7 +1,7 @@
 package query
 
 import (
-	"github.com/toledoom/gork/internal/domain/leaderboard"
+	"github.com/toledoom/gork_example/internal/domain/leaderboard"
 )
 
 const GetRankQueryID = "GetRank"

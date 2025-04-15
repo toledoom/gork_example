@@ -9,8 +9,8 @@ import (
 	"github.com/aws/aws-sdk-go-v2/feature/dynamodb/attributevalue"
 	"github.com/aws/aws-sdk-go-v2/service/dynamodb"
 	"github.com/aws/aws-sdk-go-v2/service/dynamodb/types"
-	domain "github.com/toledoom/gork/internal/domain/battle"
 	"github.com/toledoom/gork/pkg/gork"
+	domain "github.com/toledoom/gork_example/internal/domain/battle"
 )
 
 const tableName = "Battles"
