@@ -21,7 +21,7 @@ func StartBattle(cr *gork.CommandRegistry, qr *gork.QueryRegistry) gork.UseCase[
 		}
 		err := gork.HandleCommand(cr, &startBattleCommand)
 		if err != nil {
-			return StartBattleOutput{}, nil
+			return StartBattleOutput{}, err
 		}
 
 		return StartBattleOutput{}, nil
