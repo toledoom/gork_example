@@ -22,7 +22,7 @@ func GetTopPlayers(cr *gork.CommandRegistry, qr *gork.QueryRegistry) gork.UseCas
 
 		response, err := gork.HandleQuery[*query.GetTopPlayers, *query.GetTopPlayersResponse](qr, q)
 		if err != nil {
-			return GetTopPlayersOutput{}, nil
+			return GetTopPlayersOutput{}, err
 		}
 
 		return GetTopPlayersOutput{
